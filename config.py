@@ -48,8 +48,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Veten_1")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Veten_1")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/roserobotlar")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/rosexmusic")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -86,11 +86,11 @@ autoclean = []
 confirmer = {}
 
 
-START_IMG_URL = ["https://files.catbox.moe/9jj5w8.jpg"]
-PING_IMG_URL = ["https://files.catbox.moe/9jj5w8.jpg"]
-STATS_IMG_URL = ["https://files.catbox.moe/9jj5w8.jpg"]
+START_IMG_URL = ["https://share.google/jxKJU6vCzamu6z91g"]
+PING_IMG_URL = ["https://share.google/LJ5GEtaaDKIfYbtX3"]
+STATS_IMG_URL = ["https://share.google/jxKJU6vCzamu6z91g"]
 PLAYLIST_IMG_URL = getenv(
-    "PLAYLIST_IMG_URL", "https://files.catbox.moe/9jj5w8.jpg"
+    "PLAYLIST_IMG_URL", "https://share.google/LJ5GEtaaDKIfYbtX3"
 )
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL", "https://files.catbox.moe/9jj5w8.jpg"
@@ -137,6 +137,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 

@@ -39,7 +39,7 @@
       },
       "STRING_SESSION": {
         "description": "A Pyrogram v2 String Session .",
-        "value": "AgGj8-gAo8FC5zcTSpk-5B8CXwLB39AXUbo-CIJ6SsieNIBXPLxvEw9mmw1styKJ5C15_6ug_3KJMzcV095GCjsW0Q65G_AQ7WpOTLv0lMgfK4HDQkM99JOMGTwLQl1_COINPH0lAY5dFvaTeKO0by2e3dApLlkXwy4MaQv2mmJn0Axn09KmoCnaL6YnAKCr2vBM36iYJNpjQV_x-UnYBiu3JK1NQNSQQdCTT5WKxlQT1Ufx5wiWncoNnr_HvLHNrCVwFzjpDM0iNdAlfAo1uuMd7Nl2UCSyggJ0kOORzYrseqQDsX568dhMcY9fC69tHlKKkUkduZ-2pr4297cdF29bF2UbXAAAAAHOg2ddAA",
+        "value": "AgD4KYsArph9C2xjhHevAvG5Au8W320g7JCpvHOjNa8NQ6NOqw32YCKvWDNILXPl7Iii9D4xWwfQ0WJ0ZcODIyI0tjUsLwvxFIUmQmbghhMolU0fi7uoClR4moN7L4Vpc5TJLLAlZy6GLYGXsdwNlcZOdbuJnkiG2ImpjKx-1ZQkWTpVXIjESj047FIi8gSN4O_cBH2bW6e5jSWX96MNvNwz0K2Mp1GlJL8S2YmeSXo_m89mOhH8-RatM9V36CIybL6xIqq4lSl5bX4WyoDjgt9gX_jG-TlbJVX5Y2UUF2YheuJ4or0BEwVTXZecg-Kl3ObEfF-5_W8POCu10TgQkC9iYRnTsgAAAAHyX9m-AA",
         "required": true
       },
       "QUEUE_LIMIT": {
@@ -76,6 +76,7 @@
       ],
       "stack": "container"
   }
+
 
 
 

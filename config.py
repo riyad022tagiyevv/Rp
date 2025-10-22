@@ -86,9 +86,9 @@ autoclean = []
 confirmer = {}
 
 
-START_IMG_URL = ["https://i.postimg.cc/rmQ9fFf7/ROSEX-LOGO.jpg"]
-PING_IMG_URL = ["https://i.postimg.cc/mtL160Fp/images.jpg"]
-STATS_IMG_URL = ["https://share.google/m4MfiHAvbnsueu3GX"]
+START_IMG_URL = ["https://postimg.cc/vgx9BMFv"]
+PING_IMG_URL = ["https://postimg.cc/vgx9BMFv"]
+STATS_IMG_URL = ["https://postimg.cc/vgx9BMFv"]
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL", "https://share.google/LJ5GEtaaDKIfYbtX3"
 )
@@ -137,6 +137,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 

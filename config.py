@@ -86,20 +86,20 @@ autoclean = []
 confirmer = {}
 
 
-START_IMG_URL = ["https://i.postimg.cc/k5XpvZcV/original-079112eeaffa30b8a1dcb0a29d98a646.png"]
-PING_IMG_URL = ["https://i.postimg.cc/k5XpvZcV/original-079112eeaffa30b8a1dcb0a29d98a646.png"]
-STATS_IMG_URL = ["https://postimg.cc/vgx9BMFv"]
+START_IMG_URL = ["https://i.postimg.cc/pTV02skt/ROSEX-LOGO.jpg"]
+PING_IMG_URL = ["https://i.postimg.cc/pTV02skt/ROSEX-LOGO.jpg"]
+STATS_IMG_URL = ["https://i.postimg.cc/pTV02skt/ROSEX-LOGO.jpg"]
 PLAYLIST_IMG_URL = getenv(
-    "PLAYLIST_IMG_URL", "https://share.google/LJ5GEtaaDKIfYbtX3"
+    "PLAYLIST_IMG_URL", "https://i.postimg.cc/pTV02skt/ROSEX-LOGO.jpg"
 )
 TELEGRAM_AUDIO_URL = getenv(
-    "TELEGRAM_AUDIO_URL", "https://files.catbox.moe/9jj5w8.jpg"
+    "TELEGRAM_AUDIO_URL", "https://i.postimg.cc/pTV02skt/ROSEX-LOGO.jpg"
 )
 TELEGRAM_VIDEO_URL = getenv(
-    "TELEGRAM_VIDEO_URL", "https://files.catbox.moe/9jj5w8.jpg"
+    "TELEGRAM_VIDEO_URL", "https://i.postimg.cc/pTV02skt/ROSEX-LOGO.jpg"
 )
 STREAM_IMG_URL = getenv(
-    "STREAM_IMG_URL", "https://files.catbox.moe/9jj5w8.jpg"
+    "STREAM_IMG_URL", "https://i.postimg.cc/pTV02skt/ROSEX-LOGO.jpg"
 )
 SOUNCLOUD_IMG_URL = getenv(
     "SOUNCLOUD_IMG_URL", "https://files.catbox.moe/9jj5w8.jpg"
@@ -137,6 +137,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 

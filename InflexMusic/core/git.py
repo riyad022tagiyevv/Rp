@@ -31,41 +31,58 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
 
 def git():
     REPO_LINK = config.UPSTREAM_REPO
+
+    # Token varsa istifadə edək
     if config.GIT_TOKEN:
-        GIT_USERNAME = REPO_LINK.split("com/")[1].split("/")[0]
-        TEMP_REPO = REPO_LINK.split("https://")[1]
-        UPSTREAM_REPO = f"https://{GIT_USERNAME}:{config.GIT_TOKEN}@{TEMP_REPO}"
+        USER = REPO_LINK.split("com/")[1].split("/")[0]
+        TEMP = REPO_LINK.replace("https://", "")
+        UPSTREAM_REPO = f"https://{USER}:{config.GIT_TOKEN}@{TEMP}"
     else:
-        UPSTREAM_REPO = config.UPSTREAM_REPO
+        UPSTREAM_REPO = REPO_LINK
+
     try:
         repo = Repo()
-        LOGGER(__name__).info(f"Git Client Found [VPS DEPLOYER]")
-    except GitCommandError:
-        LOGGER(__name__).info(f"Invalid Git Command")
-    except InvalidGitRepositoryError:
+        LOGGER(__name__).info("Git repo artıq mövcuddur.")
+    except (GitCommandError, InvalidGitRepositoryError):
+        LOGGER(__name__).info("Yeni git repo yaradılır...")
         repo = Repo.init()
-        if "origin" in repo.remotes:
-            origin = repo.remote("origin")
-        else:
+
+        # REMOTE YARADILIR
+        if "origin" not in repo.remotes:
             origin = repo.create_remote("origin", UPSTREAM_REPO)
-        origin.fetch()
+        else:
+            origin = repo.remote("origin")
+
+        # FETCH
+        try:
+            origin.fetch()
+        except Exception as e:
+            LOGGER(__name__).error(f"Fetch error: {e}")
+            return
+
+        # BRANCH YOXLANIR
+        if config.UPSTREAM_BRANCH not in origin.refs:
+            LOGGER(__name__).error(
+                f"❌ Branch tapılmadı: {config.UPSTREAM_BRANCH}\n"
+                f"Repo-da olan branch-lar: {[ref.name for ref in origin.refs]}"
+            )
+            return
+
+        # HEAD YARADILIR
         repo.create_head(
             config.UPSTREAM_BRANCH,
-            origin.refs[config.UPSTREAM_BRANCH],
-        )
-        repo.heads[config.UPSTREAM_BRANCH].set_tracking_branch(
             origin.refs[config.UPSTREAM_BRANCH]
-        )
-        repo.heads[config.UPSTREAM_BRANCH].checkout(True)
+        ).set_tracking_branch(
+            origin.refs[config.UPSTREAM_BRANCH]
+        ).checkout(True)
+
+        # PULL
         try:
-            repo.create_remote("origin", config.UPSTREAM_REPO)
-        except BaseException:
-            pass
-        nrs = repo.remote("origin")
-        nrs.fetch(config.UPSTREAM_BRANCH)
-        try:
-            nrs.pull(config.UPSTREAM_BRANCH)
+            origin.pull(config.UPSTREAM_BRANCH)
         except GitCommandError:
             repo.git.reset("--hard", "FETCH_HEAD")
+
+        # REQUIREMENT QURULMASI
         install_req("pip3 install --no-cache-dir -r requirements.txt")
-        LOGGER(__name__).info(f"Fetching updates from upstream repository...")
+
+        LOGGER(__name__).info("Upstream-dən yeniləmələr çəkildi.")

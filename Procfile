@@ -1,1 +1,3 @@
-worker: bash start
+#!/bin/bash
+python3 main.py
+

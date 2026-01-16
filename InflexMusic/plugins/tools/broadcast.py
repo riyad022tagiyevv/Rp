@@ -7,7 +7,7 @@ from InflexMusic import app
 async def rm_handler(client, message):
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("🧑‍💻 Owner", url="https://t.me/CwaX7")],
+            [InlineKeyboardButton("🧑‍💻 Owner", url="https://t.me/StudionSCS")],
             [InlineKeyboardButton("✅ Rəsmi Bot", url="https://t.me/RespublicMusicBot")],
             [InlineKeyboardButton("🚀 Yaradıcı Support", url="https://t.me/RespublicSupport")],
             [InlineKeyboardButton("🥷 Yaradıcı", url="https://t.me/RespublicOwner")],

@@ -45,8 +45,8 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 # --------------------------------------
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/roserobotlar")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/rosexmusic")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/veten_1")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Botlardesdek")
 
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
@@ -75,44 +75,44 @@ autoclean = []
 confirmer = {}
 
 # Images
-START_IMG_URL = ["https://i.postimg.cc/vZ5wdk4g/stylish-rose-logo-4cf77d1d-c697-47bc.jpg"]
-PING_IMG_URL = ["https://i.postimg.cc/vZ5wdk4g/stylish-rose-logo-4cf77d1d-c697-47bc.jpg"]
-STATS_IMG_URL = ["https://i.postimg.cc/vZ5wdk4g/stylish-rose-logo-4cf77d1d-c697-47bc.jpg"]
+START_IMG_URL = ["https://files.catbox.moe/1o0til.jpg"]
+PING_IMG_URL = ["https://files.catbox.moe/1o0til.jpg"]
+STATS_IMG_URL = ["https://files.catbox.moe/1o0til.jpg"]
 
 PLAYLIST_IMG_URL = getenv(
-    "PLAYLIST_IMG_URL", "https://i.postimg.cc/pTV02skt/ROSEX-LOGO.jpg"
+    "PLAYLIST_IMG_URL", "https://files.catbox.moe/1o0til.jpg"
 )
 
 TELEGRAM_AUDIO_URL = getenv(
-    "TELEGRAM_AUDIO_URL", "https://i.postimg.cc/pTV02skt/ROSEX-LOGO.jpg"
+    "TELEGRAM_AUDIO_URL", "https://files.catbox.moe/1o0til.jpg"
 )
 
 TELEGRAM_VIDEO_URL = getenv(
-    "TELEGRAM_VIDEO_URL", "https://i.postimg.cc/pTV02skt/ROSEX-LOGO.jpg"
+    "TELEGRAM_VIDEO_URL", "https://files.catbox.moe/1o0til.jpg"
 )
 
 STREAM_IMG_URL = getenv(
-    "STREAM_IMG_URL", "https://i.postimg.cc/pTV02skt/ROSEX-LOGO.jpg"
+    "STREAM_IMG_URL", "https://files.catbox.moe/1o0til.jpg"
 )
 
 SOUNCLOUD_IMG_URL = getenv(
-    "SOUNCLOUD_IMG_URL", "https://files.catbox.moe/9jj5w8.jpg"
+    "SOUNCLOUD_IMG_URL", "https://files.catbox.moe/1o0til.jpg"
 )
 
 YOUTUBE_IMG_URL = getenv(
-    "YOUTUBE_IMG_URL", "https://files.catbox.moe/9jj5w8.jpg"
+    "YOUTUBE_IMG_URL", "https://files.catbox.moe/1o0til.jpg"
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
-    "SPOTIFY_ARTIST_IMG_URL", "https://files.catbox.moe/9jj5w8.jpg"
+    "SPOTIFY_ARTIST_IMG_URL", "https://files.catbox.moe/1o0til.jpg"
 )
 
 SPOTIFY_ALBUM_IMG_URL = getenv(
-    "SPOTIFY_ALBUM_IMG_URL", "https://files.catbox.moe/9jj5w8.jpg"
+    "SPOTIFY_ALBUM_IMG_URL", "https://files.catbox.moe/1o0til.jpg"
 )
 
 SPOTIFY_PLAYLIST_IMG_URL = getenv(
-    "SPOTIFY_PLAYLIST_IMG_URL", "https://files.catbox.moe/9jj5w8.jpg"
+    "SPOTIFY_PLAYLIST_IMG_URL", "https://files.catbox.moe/1o0til.jpg"
 )
 
 
@@ -136,3 +136,4 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. It must start with https://"
         )
+

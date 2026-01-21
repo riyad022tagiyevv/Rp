@@ -15,7 +15,7 @@
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "7637744073:AAENuPojMeYWh3xCXQ2F9G08B19vnh-OMmw",
+        "value": "8257358585:AAH8jApvsde2RfvyrvnmmCkDRpp22_UKD-8",
         "required": true
       },
       "MONGO_DB_URI": {
@@ -25,12 +25,12 @@
       },
       "OWNER_ID": {
         "description": "The user id of user whom you would like to add as OWNER.",
-        "value": "7426096650",
+        "value": "8132426159",
         "required": true
       },
       "STRING_SESSION": {
         "description": "A Pyrogram v2 String Session.",
-        "value": "AgD4KYsArph9C2xjhHevAvG5Au8W320g7JCpvHOjNa8NQ6NOqw32YCKvWDNILXPl7Iii9D4xWwfQ0WJ0ZcODIyI0tjUsLwvxFIUmQmbghhMolU0fi7uoClR4moN7L4Vpc5TJLLAlZy6GLYGXsdwNlcZOdbuJnkiG2ImpjKx-1ZQkWTpVXIjESj047FIi8gSN4O_cBH2bW6e5jSWX96MNvNwz0K2Mp1GlJL8S2YmeSXo_m89mOhH8-RatM9V36CIybL6xIqq4lSl5bX4WyoDjgt9gX_jG-TlbJVX5Y2UUF2YheuJ4or0BEwVTXZecg-Kl3ObEfF-5_W8POCu10TgQkC9iYRnTsgAAAAHyX9m-AA",
+        "value": "AgFwyZ4APPw3FugMfIXacri3gddX3H0SioDqf9T_0Un-yHhmfNJ6HTTytlRfJdSnYpwQvVul9IFjOjiOe0vYx5EjVTL97qZBessYzkLWL96dmWjsukjRPBSOImTBqzWsluzDb9mD20vkUEHOgDrbjsLy1tsinRJTZaN0J37jGeRqF2NlmKT4fE1LyFz_KOYuRye4ZyOMhr_uACiN0Ge2bHPKmV6BUjlOaP1E26g-SuJRcLaHuW317fPoXfcrpsi6SE0aUFi62dDtlPK2zm3hv43fqqWYRRwOGXxWdjK2hlaO-LZ18DaZ0vyIvG_ipVGi_wT4zHJTxwS6uyk3fsnr1uveYddb3QAAAAHxWMNQAA",
         "required": true
       },
       "QUEUE_LIMIT": {
@@ -50,9 +50,10 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Do not ever try to put channel ID here.",
-        "value": "-1002827565646",
+        "value": "-1003675213484",
         "required": true
       }
     },
     "stack": "container"
 }
+

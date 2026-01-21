@@ -2,6 +2,15 @@
     "name": "Inflex Music Bot",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
     "logo": "https://graph.org/file/d6a63fe91240f0b271f7f.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "Aviax",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
@@ -29,12 +38,12 @@
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram v2 String Session.",
+        "description": "A Pyrogram v2 String Session .",
         "value": "AgFwyZ4APPw3FugMfIXacri3gddX3H0SioDqf9T_0Un-yHhmfNJ6HTTytlRfJdSnYpwQvVul9IFjOjiOe0vYx5EjVTL97qZBessYzkLWL96dmWjsukjRPBSOImTBqzWsluzDb9mD20vkUEHOgDrbjsLy1tsinRJTZaN0J37jGeRqF2NlmKT4fE1LyFz_KOYuRye4ZyOMhr_uACiN0Ge2bHPKmV6BUjlOaP1E26g-SuJRcLaHuW317fPoXfcrpsi6SE0aUFi62dDtlPK2zm3hv43fqqWYRRwOGXxWdjK2hlaO-LZ18DaZ0vyIvG_ipVGi_wT4zHJTxwS6uyk3fsnr1uveYddb3QAAAAHxWMNQAA",
         "required": true
       },
       "QUEUE_LIMIT": {
-        "description": "Fill Queue Limit. Example - 15",
+        "description": "Fill Queue Limit . Example - 15",
         "value": "15",
         "required": false
       },
@@ -54,6 +63,24 @@
         "required": true
       }
     },
-    "stack": "container"
-}
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
+
+
+
+
+
+
+
 

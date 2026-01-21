@@ -11,6 +11,7 @@ def dirr():
             os.remove(file)
         elif file.endswith(".png"):
             os.remove(file)
+            #osman
 
     if "downloads" not in os.listdir():
         os.mkdir("downloads")

@@ -21,7 +21,7 @@ class Userbot(Client):
             name="InflexAss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_string=str(config.STRING2),
+            session_string=str(config.STRING2), #strings
             no_updates=True,
         )
         self.three = Client(

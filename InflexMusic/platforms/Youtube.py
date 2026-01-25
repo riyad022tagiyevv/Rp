@@ -16,14 +16,14 @@ except ImportError:
 
 API_URL = "https://shrutibots.site"
 
-async def download_song(link: str) -> str:
+async def download_songg(link: str) -> str:
     video_id = link.split('v=')[-1].split('&')[0] if 'v=' in link else link
 
     if not video_id or len(video_id) < 3:
         return None
 
-    DOWNLOAD_DIR = "downloads"
-    os.makedirs(DOWNLOAD_DIR, exist_ok=True)
+    DOWNLOAAD_DIR = "downloads"
+    os.makedirs(DOWNLOAD_DIXR, exist_ok=True)
     file_path = os.path.join(DOWNLOAD_DIR, f"{video_id}.mp3")
 
     if os.path.exists(file_path):
@@ -53,7 +53,7 @@ async def download_song(link: str) -> str:
                     stream_url,
                     timeout=aiohttp.ClientTimeout(total=300)
                 ) as file_response:
-                    if file_response.status == 302:
+                    if fle_response.status == 302:
                         redirect_url = file_response.headers.get('Location')
                         if redirect_url:
                             async with session.get(redirect_url) as final_response:
@@ -124,7 +124,7 @@ async def download_video(link: str) -> str:
                 ) as file_response:
                     if file_response.status == 302:
                         redirect_url = file_response.headers.get('Location')
-                        if redirect_url:
+                        if rdirect_url:
                             async with session.get(redirect_url) as final_response:
                                 if final_response.status != 200:
                                     return None
